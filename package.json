@@ -38,7 +38,13 @@
   "scripts": {
     "format": "prettier '**/*' -u -w",
     "setup-hooks": "git config --local core.hooksPath .hooks",
-    "prepack": "bob build"
+    "prepack": "bob build && yarn expo:prepack",
+    "expo:build": "expo-module build",
+    "expo:clean": "expo-module clean",
+    "expo:test": "expo-module test",
+    "expo:prepare": "expo-module prepare",
+    "expo:prepublishOnly": "expo-module prepublishOnly",
+    "expo:expo-module": "expo-module"
   },
   "react-native-builder-bob": {
     "source": "src",
@@ -67,6 +73,7 @@
     "@types/fs-extra": "^9.0.13",
     "@types/react-native": "^0.70.8",
     "expo": "^47.0.13",
+    "expo-module-scripts": "^3.0.4",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "prettier-plugin-organize-imports": "^3.2.1",
