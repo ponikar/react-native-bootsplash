@@ -12,9 +12,9 @@ export const setupAndroidMainActivity = (config) => {
 
     updatedConfig.modResults.contents =
       updatedConfig.modResults.contents.replace(
-        /super\.onCreate\(savedInstanceState\);/,
-        `super.onCreate(savedInstanceState);
-            RNBootSplash.init(this);`,
+        /super\.onCreate/,
+        `super.onCreate(null);
+        RNBootSplash.init(this);`,
       );
 
     return updatedConfig;
