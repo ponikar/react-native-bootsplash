@@ -83,10 +83,7 @@ RCT_EXPORT_MODULE();
   }
 }
 
-RCT_REMAP_METHOD(hide,
-                 hideWithFade:(BOOL)fade
-                 resolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject) {
++ (void) hide:hideWithFade:(BOOL)fade resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject {
   if (_resolverQueue == nil)
     _resolverQueue = [[NSMutableArray alloc] init];
 

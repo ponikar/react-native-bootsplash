@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61208F67292F859700798E08 /* SetupJSI.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61208F65292F859700798E08 /* SetupJSI.mm */; };
+		61208F6B292F870400798E08 /* install.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61208F69292F870400798E08 /* install.mm */; };
 		DD611D5622B80FED00D03EA8 /* RNBootSplash.m in Sources */ = {isa = PBXBuildFile; fileRef = DD611D5422B80FED00D03EA8 /* RNBootSplash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNBootSplash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBootSplash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61208F65292F859700798E08 /* SetupJSI.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SetupJSI.mm; sourceTree = "<group>"; };
+		61208F66292F859700798E08 /* SetupJSI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupJSI.h; sourceTree = "<group>"; };
+		61208F69292F870400798E08 /* install.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = install.mm; sourceTree = "<group>"; };
+		61208F6A292F870400798E08 /* install.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = install.h; sourceTree = "<group>"; };
 		DD611D5422B80FED00D03EA8 /* RNBootSplash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBootSplash.m; sourceTree = "<group>"; };
 		DD611D5522B80FED00D03EA8 /* RNBootSplash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBootSplash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -28,6 +34,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				61208F69292F870400798E08 /* install.mm */,
+				61208F6A292F870400798E08 /* install.h */,
+				61208F64292F857700798E08 /* jsi */,
 				DD611D5522B80FED00D03EA8 /* RNBootSplash.h */,
 				DD611D5422B80FED00D03EA8 /* RNBootSplash.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -35,6 +44,15 @@
 			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
+		};
+		61208F64292F857700798E08 /* jsi */ = {
+			isa = PBXGroup;
+			children = (
+				61208F65292F859700798E08 /* SetupJSI.mm */,
+				61208F66292F859700798E08 /* SetupJSI.h */,
+			);
+			path = jsi;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -91,7 +109,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61208F67292F859700798E08 /* SetupJSI.mm in Sources */,
 				DD611D5622B80FED00D03EA8 /* RNBootSplash.m in Sources */,
+				61208F6B292F870400798E08 /* install.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
