@@ -66,6 +66,7 @@
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
     "@types/react-native": "^0.70.8",
+    "expo": "^47.0.13",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "prettier-plugin-organize-imports": "^3.2.1",
