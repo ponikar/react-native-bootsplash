@@ -15,6 +15,7 @@ export const setupAndroidBuildGradle = async (config) => {
         /compileSdkVersion\s(\d+)/,
       )?.[1] || 0;
 
+    console.log("COMPILE SDK VERSION", compileSDKVersion);
     if (Number(compileSDKVersion) < 31) {
       console.warn(
         "SplashScreen requires compileSdkVersion 31 or higher. Please update your android/build.gradle file.",
