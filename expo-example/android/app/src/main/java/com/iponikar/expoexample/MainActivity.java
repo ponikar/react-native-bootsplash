@@ -1,8 +1,9 @@
 package com.iponikar.expoexample;
+         import com.zoontek.rnbootsplash.RNBootSplash;
+        
 
 import android.os.Build;
 import android.os.Bundle;
-        import com.zoontek.rnbootsplash.RNBootSplash;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -16,10 +17,9 @@ public class MainActivity extends ReactActivity {
     // Set the theme to AppTheme BEFORE onCreate to support 
     // coloring the background, status bar, and navigation bar.
     // This is required for expo-splash-screen.
-    setTheme(R.style.AppTheme);
+    
     super.onCreate(null);
-        RNBootSplash.init(this);(null);
-  }
+  RNBootSplash.init(R.drawable.bootsplash, MainActivity.this);}
 
   /**
    * Returns the name of the main component registered from JavaScript.
