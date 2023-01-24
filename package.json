@@ -44,7 +44,10 @@
     "expo:test": "expo-module test -p ./expo/plugin/tsconfig.json",
     "expo:prepare": "expo-module prepare -p ./expo/plugin/tsconfig.json",
     "expo:prepublishOnly": "expo-module prepublishOnly",
-    "expo:expo-module": "expo-module"
+    "expo:expo-module": "expo-module",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "react-native-builder-bob": {
     "source": "src",
@@ -67,7 +70,12 @@
   "dependencies": {
     "fs-extra": "^11.1.0",
     "jimp": "^0.16.2",
-    "picocolors": "^1.0.0"
+    "picocolors": "^1.0.0",
+    "expo": "~47.0.12",
+    "expo-splash-screen": "~0.17.5",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-native": "0.70.5"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
@@ -81,6 +89,7 @@
     "react-native": "0.70.6",
     "react-native-builder-bob": "^0.20.3",
     "rescript": "^10.0.1",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "@babel/core": "^7.12.9"
   }
 }
